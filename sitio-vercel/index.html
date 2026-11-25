@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi organizador de actividades</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mi organizador de actividades</h1>
+        <p>Organiza tus tareas y alcanza tus metas.</p>
+    </header>
+
+    <main>
+        <section class="formulario">
+            <h2>Agregar nueva actividad</h2>
+
+            <form id="formularioActividad">
+                <label for="actividad">Nombre de la actividad:</label>
+                <input type="text" id="actividad"
+                    placeholder="Ej. Terminar tarea" required>
+
+                <label for="fecha">Fecha límite:</label>
+                <input type="date" id="fecha" required>
+
+                <button type="submit">Agregar actividad</button>
+            </form>
+        </section>
+
+        <section class="lista">
+            <h2>Mis actividades</h2>
+            <ul id="listaActividades">
+                <li class="vacio">Todavía no tienes actividades.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Proyecto M4S1 - Aplicación web publicada en Vercel</p>
+        <p>Desarrollado por Paola</p>
+    </footer>
+
+    <script>
+        const formulario = document.getElementById("formularioActividad");
+        const lista = document.getElementById("listaActividades");
+
+        formulario.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const nombre = document.getElementById("actividad").value.trim();
+            const fecha = document.getElementById("fecha").value;
+
+            if (!nombre || !fecha) return;
+
+            const vacio = lista.querySelector(".vacio");
+            if (vacio) vacio.remove();
+
+            const elemento = document.createElement("li");
+            elemento.textContent = nombre + " - Fecha límite: " + fecha;
+
+            lista.appendChild(elemento);
+            formulario.reset();
+        });
+    </script>
+
+</body>
+</html>
