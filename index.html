@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi organizador de actividades</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mi organizador de actividades</h1>
+        <p>Organiza tus tareas y alcanza tus metas.</p>
+    </header>
+
+    <main>
+        <section class="formulario">
+            <h2>Agregar nueva actividad</h2>
+
+            <form id="formularioActividad">
+                <label for="actividad">Nombre de la actividad:</label>
+                <input
+                    type="text"
+                    id="actividad"
+                    placeholder="Ej. Terminar tarea de programación"
+                    required
+                >
+
+                <label for="fecha">Fecha límite:</label>
+                <input type="date" id="fecha" required>
+
+                <button type="submit">Agregar actividad</button>
+            </form>
+        </section>
+
+        <section class="lista">
+            <h2>Mis actividades</h2>
+            <ul id="listaActividades">
+                <li class="vacio">Todavía no tienes actividades.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Proyecto M4S1 - Aplicación web en la nube</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

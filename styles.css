@@ -1,0 +1,101 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3eaff;
+    color: #32145c;
+}
+
+header {
+    background: #6c35a8;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+main {
+    width: 90%;
+    max-width: 750px;
+    margin: 35px auto;
+}
+
+.formulario,
+.lista {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(50, 20, 92, 0.12);
+}
+
+h2 {
+    color: #6c35a8;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #d9c5f2;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+button {
+    background: #f5c842;
+    color: #32145c;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 18px;
+}
+
+button:hover {
+    background: #e9b923;
+}
+
+#listaActividades {
+    list-style: none;
+}
+
+#listaActividades li {
+    background: #f3eaff;
+    border-left: 5px solid #e04444;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+}
+
+.vacio {
+    color: #777;
+}
+
+footer {
+    background: #32145c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}

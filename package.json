@@ -1,0 +1,13 @@
+{
+  "name": "reto-m4s1-cervantes-paola",
+  "version": "1.0.0",
+  "description": "Mi organizador de actividades",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "dotenv": "^16.4.7"
+  }
+}
